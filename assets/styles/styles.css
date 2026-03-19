@@ -20,7 +20,6 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
 }
 
 .title {
@@ -95,11 +94,18 @@ main {
     height: 275px;
 }
 
+.img-alt{
+    display: none;
+}
+
 .body {
     width: 75%;
     height: fit-content;
     background-color: rgb(247, 247, 247);
     padding: 20px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .img_body{
@@ -108,8 +114,38 @@ main {
     margin: 10px 0px;
 }
 
+.img-apresentacao{
+    display: flex;
+    gap: 30px;
+}
+
 .body p{
     text-align: justify;
+}
+
+.text-display{
+    display: flex;
+    gap: 40px;
+}
+
+.text-display img{
+    width: 40%;
+}
+
+.text-display p{
+    width: 50%;
+    padding-top: 15px;
+}
+
+.messi-clubes{
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+}
+
+img{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 footer{
@@ -124,9 +160,19 @@ footer{
     text-align: center;
 }
 
+@media screen and (max-width: 1085px){
+    .messi-clubes{
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 950px){
     .img_body{
         height: 300px;
+    }
+
+    .messi-clubes{
+        height: 280px;
     }
 }
 
@@ -150,5 +196,26 @@ footer{
 
     .img_body{
         height: 250px;
+    }
+
+    .text-display{
+        flex-direction: column;
+    }
+
+    .text-display p, .text-display img{
+        width: 100%;
+    }
+
+    .messi-clubes{
+        height: 275px;
+    }
+
+    .info-gerais figure{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .img-alt{
+        display: flex;
     }
 }
