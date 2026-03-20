@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif; 
+}
+.body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 100%; 
+    height: 100%;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+section{
+    display: flex;
+    height: 100%uyy;
+}
+.first{
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    line-height: 25px;
+}
+.first h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.first .card img{
+    border-radius: 15px;
+    width: 200px;
+    max-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.card{
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 20px;
+}
+.second{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    align-items: center;
+    padding: 40px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 1200px;
+}
+.second p, .second h2, .second h3, .second ul {
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+.second h1{
+    margin-bottom: 20px;
+}
+.second img{
+    width: 400px;
+    border-radius: 15px; 
+    margin: 20px 0;
+}
+h1, h2, h3{
+    color: #d4af37;
+}
+ul {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+li {
+    color: #d4af37;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.second img{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+    .container, section {
+
+        flex-direction: column;
+    }
+
+    .first, .second {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px 15px; 
+    }
+    .cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cards .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .second img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    p, li {
+        font-size: 16px;
+        line-height: 1.6; 
+        text-align: left;
+    }
+    
+    ul {
+        margin-left: 15px;
+    }
+}
