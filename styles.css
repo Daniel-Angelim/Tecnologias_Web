@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header {
+    display: flex;
+    height: 20%;
+    background-color: yellow;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(107, 219, 182);
+    color: white;
+}
+
+header nav {
+    display: flex;
+    background-color: rgb(68, 68, 68);
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+}
+
+header li {
+    height: 100%;
+}
+
+header a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.856);
+    color: black;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.info-gerais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    gap: 10px;
+    background-color: #e9e7e7;
+}
+
+.info-gerais h2 {
+    text-align: center;
+}
+
+.info-gerais figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-gerais img{
+    height: 275px;
+}
+
+.img-alt{
+    display: none;
+}
+
+.body {
+    width: 75%;
+    height: fit-content;
+    background-color: rgb(247, 247, 247);
+    padding: 20px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img_body{
+    width: 30%;
+    height: 380px;
+    margin: 10px 0px;
+}
+
+.img-apresentacao{
+    display: flex;
+    gap: 30px;
+}
+
+.body p{
+    text-align: justify;
+}
+
+.text-display{
+    display: flex;
+    gap: 40px;
+}
+
+.text-display img{
+    width: 40%;
+}
+
+.text-display p{
+    width: 50%;
+    padding-top: 15px;
+}
+
+.messi-clubes{
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+}
+.neymar-clubes{
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+}
+.neymar-clubes img{
+    width: 24%;
+}
+.neymarC{
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+}
+.neymarS{
+    display: flex;
+    height: 280px;
+    justify-content: space-between;
+}
+img{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+    background-color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 1085px){
+    .messi-clubes{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .img_body{
+        height: 300px;
+    }
+
+    .messi-clubes{
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header ul {
+        flex-direction: column;
+    }
+
+    .header {
+        font-size: 15px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .info-gerais,
+    .body {
+        width: 100%;
+    }
+
+    .img_body{
+        height: 250px;
+    }
+
+    .text-display{
+        flex-direction: column;
+    }
+
+    .text-display p, .text-display img{
+        width: 100%;
+    }
+
+    .messi-clubes{
+        height: 275px;
+    }
+
+    .info-gerais figure{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .img-alt{
+        display: flex;
+    }
+}
